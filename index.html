@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Clone</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="chat-list-container">
+            <div class="search-container">
+                <div class="search-input-wrapper">
+                    <i data-lucide="search" class="search-icon"></i>
+                    <input type="text" id="search-input" placeholder="Search or start new chat">
+                </div>
+            </div>
+            <div id="chat-list" class="chat-list"></div>
+        </div>
+        <div class="chat-window-container">
+            <div id="chat-placeholder" class="chat-placeholder">
+                <p>Select a chat to start messaging</p>
+            </div>
+            <div id="chat-window" class="chat-window hidden">
+                <div class="chat-header">
+                    <div class="chat-contact-info">
+                        <div class="avatar"></div>
+                        <h2 id="chat-contact-name"></h2>
+                    </div>
+                    <i data-lucide="more-vertical" class="more-icon"></i>
+                </div>
+                <div id="message-list" class="message-list"></div>
+                <form id="message-form" class="message-form">
+                    <i data-lucide="paperclip" class="paperclip-icon"></i>
+                    <input type="text" id="message-input" placeholder="Type a message">
+                    <button type="submit">
+                        <i data-lucide="send" class="send-icon"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
